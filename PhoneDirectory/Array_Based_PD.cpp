@@ -155,6 +155,7 @@ void Phone_Directory::add(const string& name,
 	// Increment size and add new entry.
 	the_directory[size] = Directory_Entry(name, number);
 	size++;
+    modified = true;
 }
 
 /** Create a new array of directory entries with twice the capacity
