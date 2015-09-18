@@ -2,8 +2,6 @@
 
 #include "Array_Based_PD.h"
 #include <iostream>
-#include <istream>
-#include <ostream>
 #include <limits>
 using namespace std;
 
@@ -24,6 +22,7 @@ int main(int argc, char* argv[])
 	Phone_Directory the_directory;
 	the_directory.load_data(argv[1]);
 	process_commands(the_directory);
+	return 0;
 }
 
 void process_commands(Phone_Directory& the_directory)
