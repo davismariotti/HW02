@@ -115,15 +115,15 @@ void Phone_Directory::save()
 string Phone_Directory::remove_entry(const string& name) // Exercise 1.7: please complete the remove_entry() method - Ed/Kent
 { // This method has been implemented by Davis Mariotti
 	int index = find(name);
-	if (index != -1) {
+	if (index != -1) { // If the name exists
         string number = the_directory[index].get_number();
 		for (int i = index; i < size - 1; i++) { // Move
             the_directory[i] = the_directory[i + 1];
 		}
         size--;
         modified = true;
-        return number; // Returns the number
-	} else {
+        return name; // Returns the name of the person removed
+	} else { // If the name does not exist
 		return ""; // Return empty string
 	}
 }
