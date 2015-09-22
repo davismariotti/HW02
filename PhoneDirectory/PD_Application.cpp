@@ -2,8 +2,6 @@
 
 #include "Array_Based_PD.h"
 #include <iostream>
-#include <istream>
-#include <ostream>
 #include <limits>
 using namespace std;
 
@@ -24,6 +22,7 @@ int main(int argc, char* argv[])
 	Phone_Directory the_directory;
 	the_directory.load_data(argv[1]);
 	process_commands(the_directory);
+	return 0;
 }
 
 void process_commands(Phone_Directory& the_directory)
@@ -90,8 +89,14 @@ void do_remove_entry(Phone_Directory& the_directory) // Exercise 1.8: please com
 	string name;
 	cout << "Enter name: ";
 	getline(cin, name);
-	// Complete the rest of this function 
-	
+	// Completed by Geoff Rich
+	string removed_name = the_directory.remove_entry(name);
+	if (removed_name != "") {
+		cout << removed_name << " has been removed\n";
+	}
+	else {
+		cout << name << " is not in the directory\n";
+	}
 }
 
 void do_save(Phone_Directory& the_directory)
