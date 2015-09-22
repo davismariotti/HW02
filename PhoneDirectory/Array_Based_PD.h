@@ -68,7 +68,8 @@ private:
 		}
 		void set_number(const std::string& new_number) {
 			// method not implemented yet
-		}
+		}
+
 	private:
 
 	};
