@@ -51,26 +51,33 @@ public:
 	/** Writes the contents of the directory to the data file.
 	 */
 	void save();
-
+	// Alex Blair Did this Excercise.
 private:
 	class Directory_Entry /* Exercise 1.6: Please complete the definition of the Directory_Entry class here. - Ed/Kent */
 	{
 	public:
 		Directory_Entry() {} // Default no-argument constructor
 		Directory_Entry(std::string the_name, std::string the_number) {
-			// constructor not implemented yet
+			// This is the constructor for this class.
+			nam = the_name;
+			 num = the_number;
 		}
 		std::string get_name() const {
-			return ""; // method not implemented yet
+			return nam; 
 		}
 		std::string get_number() const {
-			return ""; // method not implemented yet
+			return num; 
 		}
 		void set_number(const std::string& new_number) {
-			// method not implemented yet
+			num = new_number;
 		}
 
 	private:
+
+		// These are the two variables or qualities that make up the a Directory Entry
+		std::string nam;
+
+		std::string num;
 
 	};
 
