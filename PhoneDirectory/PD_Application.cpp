@@ -3,6 +3,8 @@
 #include "Array_Based_PD.h"
 #include <iostream>
 #include <limits>
+#include <istream>
+#include <ostream>
 using namespace std;
 
 // Forward declaration of functions

@@ -51,33 +51,34 @@ public:
 	/** Writes the contents of the directory to the data file.
 	 */
 	void save();
-	// Alex Blair Did this Excercise.
+	// This method has been implemented by Alex Blair
 private:
 	class Directory_Entry /* Exercise 1.6: Please complete the definition of the Directory_Entry class here. - Ed/Kent */
 	{
 	public:
-		Directory_Entry() {} // Default no-argument constructor
+		Directory_Entry() {}; // Default no-argument constructor
 		Directory_Entry(std::string the_name, std::string the_number) {
 			// This is the constructor for this class.
-			nam = the_name;
-			 num = the_number;
+			name = the_name;
+			 number = the_number;
 		}
+		// These functions are to get and set the name and number variables.
 		std::string get_name() const {
-			return nam; 
+			return name; 
 		}
 		std::string get_number() const {
-			return num; 
+			return number; 
 		}
 		void set_number(const std::string& new_number) {
-			num = new_number;
+			number = new_number;
 		}
 
 	private:
 
 		// These are the two variables or qualities that make up the a Directory Entry
-		std::string nam;
+		std::string name;
 
-		std::string num;
+		std::string number;
 
 	};
 
