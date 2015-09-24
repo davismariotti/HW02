@@ -52,6 +52,7 @@ public:
 	 */
 	void save();
 	// This method has been implemented by Alex Blair
+	// This code should work. It compiled on my computer after I added a directory to the phone.dat file.
 private:
 	class Directory_Entry /* Exercise 1.6: Please complete the definition of the Directory_Entry class here. - Ed/Kent */
 	{
